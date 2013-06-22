@@ -194,7 +194,7 @@ section {
 }
 
 .message-bubble {
-  margin: 1em auto 2em;
+  margin: 1em auto 3em;
   padding: 1em 2em;
   position: relative;
   clear: both;
@@ -217,7 +217,8 @@ section {
   .author {
   	position: absolute;
   	font-weight: 500;
-  	bottom: -35px;
+  	bottom: -28px;
+  	height: 1em;
   }
 }
 
