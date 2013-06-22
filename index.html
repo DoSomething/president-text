@@ -1,78 +1,168 @@
 <!doctype html>
 <html>
 <head>
-  <title></title>
+  <title>Text with the President &mdash; DoSomething.org</title>
+  <link href="http://c308566.r66.cf1.rackcdn.com/din.css" rel="stylesheet" type="text/css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <link rel="stylesheet" media="all" href="stylesheets/screen.css" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 </head>
 <body>
-	<header>
-		<div class="logo">
-			<a href="http://www.dosomething.org"><img src="images/ds-logo.png" alt="DoSomething.org" /></a>
-		</div>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=105775762330";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 
-		<h1>Text with the President</h1>
-		<p class="dates">June 24th - June 28th</p>
+	<div class="wrapper">
+		<header>
+			<a href="http://www.dosomething.org"><img class="logo" src="images/ds-logo.png" alt="DoSomething.org" /></a>
 
-		<div class="social">
-			social
-		</div>
+			<div class="social">
+				<div class="fb-like" data-href="http://obama.dosomething.org" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false"></div>
+				<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div>
 
-		<div class="sponsor">
-			<a href="http://www.whitehouse.gov"><img src="images/wh-logo.png" alt="The White House" /></a>
-		</div>
-	</header>
+			<a href="http://www.whitehouse.gov"><img class="sponsor" src="images/wh-logo.png" alt="The White House" /></a>
+		</header>
 
-	<section class="intro">
-		<p>Have questions about student debt? Prez Obama will answer them:</p>
-		<h1>Text PREZ to 38383!</h1>
-	</section>
+		<h1 class="title">Text with the <strong>President</strong></h1>
+		<p class="dates">June 24 - June 28</p>
 
-	<section class="messages">
-		<h2>Obama's Response</h2>
+		<section class="call-to-action intro">
+			<p>Have questions about student debt? Prez Obama will answer them:</p>
+			<h1>Text PREZ to 38383!</h1>
+		</section>
 
-		<p>Obama will start answering questions on Monday, so send them in now to beat the rush!</p>
-	</section>
+		<section class="messages">
+			<h2><span>Obama's Response</span></h2>
 
-	<section class="outro">
-		<p>Get your questions about student debt answered by the president:</p>
-		<h1>Text PREZ to 38383!</h1>
-	</section>
+			<p>Obama will start answering questions on Monday, so send them in now to beat the rush!</p>
 
-	<section class="faq">
-		<div class="qa">
-			<h3>What exactly is happening on July 1?</h3>
-			<p>The interest rate charged on subsidized Stafford loans is doubling, from 3.4 percent to 6.8 percent.</p>
-		</div>
+			<section class="message-container">
+				<div class="message-bubble message-user">
+					Your question could be here!
+					<div class="author">
+						Your Name Here
+					</div>
+				</div>
+				<div class="message-bubble message-obama">
+					With an answer direct from the Commander in Chief!
+					<div class="author">
+						President Obama
+					</div>
+				</div>
+			</section>
+		</section>
 
-		<div class="qa">
-			<h3>What's a Stafford loan?</h3>
-			<p>It's a kind of loan product the federal government offers to college and university students.</p>
-			<p>There are two types: 
-			<p><em>Subsidized Stafford loans</em> are only available to students with financial need (that is, students for whom the cost of attendance exceeds what their family can pay). The government pays student interest on the loans for as long as they're in school. They are also limited to $3,500 for freshman year, $4,500 for the next year, and $5,500 thereafter. A student can't receive more than $23,000 in subsidized loans in total.</p>
+		<section class="call-to-action outro">
+			<p>Get <em>your</em> questions about student debt answered by the president:</p>
+			<h1>Text PREZ to 38383!</h1>
+		</section>
 
-			<p><em>Unsubsidized Stafford loans</em> currently have an interest rate double that of subsidized loans (6.8 percent), aren't limited to low-income students, don't include the government-paid-interest perk, but do have caps on how much you can borrow.</p>
+		<section class="faq">
+			<h2><span>FAQs</span></h2>
 
-			<p>Subsidized Stafford recipients can use unsubsidized Staffords to cover expenses above and beyond the cap on their subsidized loans. They're also available to grad students who, as of the debt ceiling compromise, can't receive subsidized Staffords.</p>
-		</div>
+			<div class="qa">
+				<h3>What exactly is happening on July 1?</h3>
+				<div class="answer">
+					<p>The interest rate charged on subsidized Stafford loans is doubling, from 3.4 percent to 6.8 percent.</p>
+				</div>
+			</div>
 
-		<div class="qa">
-			<h3>Question</h3>
-			<p>Answer</p>
-		</div>
+			<div class="qa">
+				<h3>What's a Stafford loan?</h3>
+				<div class="answer">
+					<p>It's a kind of loan product the federal government offers to college and university students.</p>
+					<p>There are two types:</p>
+					<ul>
+						<li><strong>Subsidized Stafford loans:</strong> are only available to students with financial need (that is, students for whom the cost of attendance exceeds what their family can pay). The government pays student interest on the loans for as long as they're in school. They are also limited to $3,500 for freshman year, $4,500 for the next year, and $5,500 thereafter. A student can't receive more than $23,000 in subsidized loans in total.</li>
+						<li><strong>Unsubsidized Stafford loans:</strong> currently have an interest rate double that of subsidized loans (6.8 percent), aren't limited to low-income students, don't include the government-paid-interest perk, but do have caps on how much you can borrow.</li>
+					</ul>
+					<p>Subsidized Stafford recipients can use unsubsidized Staffords to cover expenses above and beyond the cap on their subsidized loans. They're also available to grad students who, as of the debt ceiling compromise, can't receive subsidized Staffords.</p>
+				</div>
+			</div>
 
-		<div class="qa">
-			<h3>Question</h3>
-			<p>Answer</p>
-		</div>
+			<div class="qa">
+				<h3>What other loans does the government offer?</h3>
+				<div class="answer">
+					<ul>
+						<li><strong>PLUS loans:</strong> available for graduate and professional students and parents of undergraduates. Currently, the interest rate on those is 7.9%; there are no limits on how big the loan can be (the size is set by the school, which determines cost of attendance), and the only real prerequisite is good credit. Recently, the credit requirements were made stricter, which led to a jump in rejection rates, from 28% to 38% in a single year. <br /><br /> Historically black colleges and universities (HBCUs) were disproportionately affected, which prompted talk of lawsuits on the part of those institutions against the Department of Education.</li>
+						<li><strong>Perkins Loans:</strong> awarded to undergraduate, graduate, and professional students that schools have identified as being in "exceptional need." You have to attend a participating school to be eligible, and the lender is the school, which uses federal money as well as payments on previous Perkins loans to pay for it.<br /><br />
+						They have an interest rate of 5%. Critics have noted that a number of schools with many Perkins borrowers don't have that many Pell Grant recipients &mdash; another program targeting needy students. That, they argue, suggests that Perkins loans are divvied up based on how powerful the institution in question is, not on the objective need of the students who are borrowing.</li>
+						<li><strong>Consolidation Loans:</strong>  which let you bundle up other student loans you've taken out into one package. The interest rate is based on those of the loans being packaged, but is not to exceed 8.2%.</li>
+					</ul>
+				</div>
+			</div>
 
-		<div class="qa">
-			<h3>Question</h3>
-			<p>Answer</p>
-		</div>
+			<div class="qa">
+				<h3>Why are rates doubling on a quarter of federal student loans?</h3>
+				<div class="answer">
+					<p>Because Congress keeps pushing the deadline back. This all started in 2007, when Sen. Edward Kennedy (D-Mass.) and Rep. George Miller (R-Calif.) put together the College Cost Reduction and Access Act, which gradually reduced the subsidized rate from 6.8% to 3.4% over the course of four years, with 3.4 reached in 2011. For budgetary reasons, it was going to expire in 2013, which was moved to 2012 as part of a compromise with Republicans.</p>
+					<p>In 2012, both Mitt Romney and President Obama lobbied Congress to extend the low rates, which it did at the end of June. But they only extended them a year, so they're due to expire again in a couple weeks.</p>
+				</div>
+			</div>
 
-	</section>
+			<div class="qa">
+				<h3>Which students will this affect?</h3>
+				<div class="answer">
+					<p>Undergraduates who will be in school in the future - it only affects new student loans.</p>
+				</div>
+			</div>
 
-	<footer>
-		Questions? Email <a href="mailto:help@dosomething.org">help@dosomething.org</a>!
-	</footer>
+			<div class="qa">
+				<h3>What is the House doing about it?</h3>
+				<div class="answer">
+					<p>House Republicans, notably House Education and the Workforce Committee chair John Kline, has proposed the Smarter Solutions for Students Act, which would totally overhaul interest rates and peg them to the U.S. treasury rate.</p>
+					<p>It would make interest rates on student loans variable rather than fixed. The plan is estimated to reduce spending, and the deficit, by $3.7 billion over 10 years. The House passed the bill, but the White House threatened a veto.</p>
+				</div>
+			</div>
+
+			<div class="qa">
+				<h3>What about the Senate?</h3>
+				<div class="answer">
+					<p>They offered a bill that pegs interest rates on both Staffords and PLUS loans to the 10-year Treasury rate plus 3 percentage points, and that it made those rates fixed rather than adjustable, like under current law but unlike under the House proposal. The Senate voted the plan down, 40-57.</p>
+					<p>A Democratic plan, supported by Obama, to extend the 3.4% rate for two years got 51 votes and couldn't break a filibuster.</p>
+				</div>
+			</div>
+
+			<div class="qa">
+				<h3>And Obama?</h3>
+				<div class="answer">
+					<p>Unlike Republicans, Obama wants to keep student loans fixed-rate rather than adjustable, and doesn't want a cap, and he wants to tie to the 10-year rate rather than the three-month rate. The overall approach, then, is broadly similar to the Senate Republicans' bill. The only difference is that Obama has slightly higher interest rates for PLUS loans and slightly lower ones for subsidized Stafford loans.</p>
+				</div>
+			</div>
+
+			<div class="qa">
+				<h3>So, who's plan is the best for students?</h3>
+				<div class="answer">
+					<p>It's hard to say. For more information on each of the plans, visit <a href="http://www.washingtonpost.com/blogs/wonkblog/wp/2013/06/13/everything-you-need-to-know-about-the-student-loan-rate-hike/">The Washington Post</a></p>
+				</div>
+			</div>
+			<cite>Source: <a href="http://www.washingtonpost.com/blogs/wonkblog/wp/2013/06/13/everything-you-need-to-know-about-the-student-loan-rate-hike/">The Washington Post</a></cite>
+		</section>
+
+		<footer>
+			<strong>Questions?</strong> Email <a href="mailto:help@dosomething.org">help@dosomething.org</a>!
+		</footer>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".answer").hide();
+			$(".answer").first().show();
+
+			$(".qa").click(function() {
+				$(".answer").slideUp();
+				$(this).find(".answer").slideDown();
+			});
+
+			$(".qa h3").addClass("is-link");
+		});
+	</script>
 </body>
 </html>
