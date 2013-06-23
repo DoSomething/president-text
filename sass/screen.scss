@@ -6,6 +6,7 @@
 @import "compass/reset";
 @import "compass/css3";
 @import "vars.scss";
+@import "webfonts.scss";
 
 // PAGE STYLING
 // ----------------
@@ -21,7 +22,7 @@ p {
 }
 
 strong {
-	font-weight: bold;
+	font-weight: 600;
 }
 
 em {
@@ -120,7 +121,7 @@ header {
 		display: block;
 		text-align: center;
 		font-size: 2.5em;
-		font-weight: 700;
+		font-weight: 600;
 	}
 
 	@include respond-to(phones) {
@@ -145,7 +146,7 @@ section {
 	h2 {
 		text-align: center;
 		font-size: 24px;
-		font-weight: 500;
+		font-weight: 600;
 		margin-bottom: 48px;
 
 		span {
@@ -162,7 +163,6 @@ section {
 	position: relative;
 	z-index: 1;
 	text-align: center;
-	font-weight: bold;
 	padding: 24px;
 }
 
@@ -171,11 +171,10 @@ section {
 	line-height: 1.3em;
 
 	.ribbon {
-		font-size: 32px;
+		font-size: 38px;
 
-		@include respond-to(phones) {
-			font-size: 18px;
-		}
+		@include respond-to(tablets) { font-size: 24px; }
+		@include respond-to(phones) { font-size: 18px; }
 	}
 }
 
@@ -202,9 +201,10 @@ section {
  position: relative;
  background: $red;
  color: #fff;
+ font-weight: 600;
  text-align: center;
  line-height: 1.2em;
- padding: 1em 2em; /* Adjust to suit */
+ padding: 1em 1em; /* Adjust to suit */
  margin: 0em auto 1em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
 }
 .ribbon:before, .ribbon:after {
@@ -246,7 +246,7 @@ section {
 // ----------------
 
 .message-container {
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto 1em;
   overflow: hidden;
   clear: both;
@@ -269,13 +269,13 @@ section {
 
   p {
     line-height: 3em;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
   }
 
   .author {
   	position: absolute;
-  	font-weight: 500;
+  	font-weight: 600;
   	bottom: -28px;
   	height: 1em;
   }
@@ -330,7 +330,7 @@ section {
 	margin: 0 auto 16px;
 
 	h3 {
-		font-weight: bold;
+		font-weight: 600;
 		margin: 16px 0 0;
 
 		&.is-link {

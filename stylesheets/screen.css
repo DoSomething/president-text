@@ -70,7 +70,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* variables */
 /* colors */
 /* mixins */
-/* line 12, ../sass/screen.scss */
+@font-face {
+  font-family: "din-web-reg";
+  src: url("../webfonts/DINWeb.eot");
+  src: url("../webfonts/DINWeb.eot?iefix") format("eot"), url("../webfonts/DINWeb.woff") format("woff");
+  font-style: normal;
+  font-weight: false;
+}
+
+@font-face {
+  font-family: "din-web-reg";
+  src: url("../webfonts/DINWeb-Light.eot");
+  src: url("../webfonts/DINWeb-Light.eot?iefix") format("eot"), url("../webfonts/DINWeb-Light.woff") format("woff");
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "din-web-reg";
+  src: url("../webfonts/DINWeb-Bold.eot");
+  src: url("../webfonts/DINWeb-Bold.eot?iefix") format("eot"), url("../webfonts/DINWeb-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* line 13, ../sass/screen.scss */
 body {
   background: #E0E0E0;
   font-size: 18px;
@@ -78,27 +102,27 @@ body {
   font-family: "din-web-reg", Helvetica, Arial, sans-serif;
 }
 
-/* line 19, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
 p {
   margin: 0.5em 0 1em;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 strong {
-  font-weight: bold;
+  font-weight: 600;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 em {
   font-style: italic;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 a {
   color: #bc0028;
 }
 
-/* line 35, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 .wrapper {
   max-width: 960px;
   width: 90%;
@@ -113,13 +137,13 @@ a {
   transition: width 0.5s;
 }
 @media only screen and (max-width: 600px) {
-  /* line 35, ../sass/screen.scss */
+  /* line 36, ../sass/screen.scss */
   .wrapper {
     width: 100%;
   }
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 header {
   position: relative;
   background: #eeeeee url("../images/obama-hero.jpg") no-repeat center center;
@@ -134,13 +158,13 @@ header {
   transition: height 0.5s;
 }
 @media only screen and (max-width: 600px) {
-  /* line 52, ../sass/screen.scss */
+  /* line 53, ../sass/screen.scss */
   header {
     height: 275px;
   }
 }
 
-/* line 65, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .logo {
   position: absolute;
   top: 10px;
@@ -153,7 +177,7 @@ header {
   transition: width 0.5s, height 0.5s, left 0.5s;
 }
 @media only screen and (max-width: 600px) {
-  /* line 65, ../sass/screen.scss */
+  /* line 66, ../sass/screen.scss */
   .logo {
     left: 5px;
     width: 110px;
@@ -161,14 +185,14 @@ header {
   }
 }
 
-/* line 81, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 .social {
   position: absolute;
   bottom: 10px;
   left: 10px;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .sponsor {
   position: absolute;
   bottom: 10px;
@@ -181,14 +205,14 @@ header {
   transition: width 0.5s, height 0.5s;
 }
 @media only screen and (max-width: 600px) {
-  /* line 87, ../sass/screen.scss */
+  /* line 88, ../sass/screen.scss */
   .sponsor {
     width: 50px;
     height: 50px;
   }
 }
 
-/* line 105, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 .title {
   text-align: center;
   text-transform: uppercase;
@@ -199,25 +223,25 @@ header {
   color: #5e5e5e;
   margin: 16px 16px 0;
 }
-/* line 115, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 .title span {
   display: block;
 }
-/* line 119, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .title strong {
   display: block;
   text-align: center;
   font-size: 2.5em;
-  font-weight: 700;
+  font-weight: 600;
 }
 @media only screen and (max-width: 600px) {
-  /* line 105, ../sass/screen.scss */
+  /* line 106, ../sass/screen.scss */
   .title {
     font-size: 16px;
   }
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 .dates {
   text-align: center;
   color: #5e5e5e;
@@ -227,28 +251,27 @@ header {
   margin: 12px;
 }
 
-/* line 142, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 section {
   padding: 32px;
 }
-/* line 145, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 section h2 {
   text-align: center;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 48px;
 }
-/* line 151, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 section h2 span {
   border-bottom: 6px solid #CE0040;
 }
 
-/* line 161, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 .call-to-action {
   position: relative;
   z-index: 1;
   text-align: center;
-  font-weight: bold;
   padding: 24px;
 }
 
@@ -259,7 +282,13 @@ section h2 span {
 }
 /* line 173, ../sass/screen.scss */
 .intro .ribbon {
-  font-size: 32px;
+  font-size: 38px;
+}
+@media only screen and (min-width: 601px) and (max-width: 1049px) {
+  /* line 173, ../sass/screen.scss */
+  .intro .ribbon {
+    font-size: 24px;
+  }
 }
 @media only screen and (max-width: 600px) {
   /* line 173, ../sass/screen.scss */
@@ -268,35 +297,36 @@ section h2 span {
   }
 }
 
-/* line 182, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .outro {
   font-size: 18px;
 }
-/* line 185, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 .outro .ribbon {
   font-size: 24px;
 }
 @media only screen and (max-width: 600px) {
-  /* line 185, ../sass/screen.scss */
+  /* line 184, ../sass/screen.scss */
   .outro .ribbon {
     font-size: 18px;
   }
 }
 
-/* line 195, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 .messages p {
   text-align: center;
 }
 
-/* line 200, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 .ribbon {
   width: 40%;
   position: relative;
   background: #bc0028;
   color: #fff;
+  font-weight: 600;
   text-align: center;
   line-height: 1.2em;
-  padding: 1em 2em;
+  padding: 1em 1em;
   /* Adjust to suit */
   margin: 0em auto 1em;
   /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
@@ -350,7 +380,7 @@ section h2 span {
 
 /* line 248, ../sass/screen.scss */
 .message-container {
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto 1em;
   overflow: hidden;
   clear: both;
@@ -379,13 +409,13 @@ section h2 span {
 /* line 270, ../sass/screen.scss */
 .message-bubble p {
   line-height: 3em;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
 }
 /* line 276, ../sass/screen.scss */
 .message-bubble .author {
   position: absolute;
-  font-weight: 500;
+  font-weight: 600;
   bottom: -28px;
   height: 1em;
 }
@@ -440,7 +470,7 @@ section h2 span {
 }
 /* line 332, ../sass/screen.scss */
 .faq h3 {
-  font-weight: bold;
+  font-weight: 600;
   margin: 16px 0 0;
 }
 /* line 336, ../sass/screen.scss */
