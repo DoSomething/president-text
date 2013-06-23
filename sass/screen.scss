@@ -53,7 +53,7 @@ header {
 	position: relative;
 	background: #eee url('../images/obama-hero.jpg') no-repeat center center;
 	@include background-size(cover);
-	height: 400px;
+	height: 375px;
 
 	@include respond-to(phones) {
 		height: 275px;
@@ -110,7 +110,7 @@ header {
 	line-height: 2em;
 	letter-spacing: 0.3em;
 	color: #5e5e5e;
-	margin: 32px 16px 0;
+	margin: 16px 16px 0;
 	
 	span {
 		display: block;
@@ -134,7 +134,7 @@ header {
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	font-size: 18px;
-	margin: 16px;
+	margin: 12px;
 }
 
 // SECTIONS/HEADERS
@@ -161,6 +161,7 @@ section {
 .call-to-action {
 	text-align: center;
 	font-weight: bold;
+	padding: 24px;
 
 	h1 {
 		margin: 16px;
