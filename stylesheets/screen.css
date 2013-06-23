@@ -245,33 +245,110 @@ section h2 span {
 
 /* line 161, ../sass/screen.scss */
 .call-to-action {
+  position: relative;
+  z-index: 1;
   text-align: center;
   font-weight: bold;
   padding: 24px;
 }
-/* line 166, ../sass/screen.scss */
-.call-to-action h1 {
-  margin: 16px;
-  font-size: 2em;
-  line-height: 1em;
-}
 
-/* line 173, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .intro {
   font-size: 24px;
+  line-height: 1.3em;
 }
-
-/* line 177, ../sass/screen.scss */
-.outro {
-  font-size: 18px;
+/* line 173, ../sass/screen.scss */
+.intro .ribbon {
+  font-size: 32px;
+}
+@media only screen and (max-width: 600px) {
+  /* line 173, ../sass/screen.scss */
+  .intro .ribbon {
+    font-size: 18px;
+  }
 }
 
 /* line 182, ../sass/screen.scss */
+.outro {
+  font-size: 18px;
+}
+/* line 185, ../sass/screen.scss */
+.outro .ribbon {
+  font-size: 24px;
+}
+@media only screen and (max-width: 600px) {
+  /* line 185, ../sass/screen.scss */
+  .outro .ribbon {
+    font-size: 18px;
+  }
+}
+
+/* line 195, ../sass/screen.scss */
 .messages p {
   text-align: center;
 }
 
-/* line 190, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
+.ribbon {
+  width: 40%;
+  position: relative;
+  background: #ce0040;
+  color: #fff;
+  text-align: center;
+  line-height: 1.2em;
+  padding: 1em 2em;
+  /* Adjust to suit */
+  margin: 0em auto 1em;
+  /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+
+/* line 210, ../sass/screen.scss */
+.ribbon:before, .ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid #9b0030;
+  z-index: -1;
+}
+
+/* line 218, ../sass/screen.scss */
+.ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+}
+
+/* line 223, ../sass/screen.scss */
+.ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+}
+
+/* line 228, ../sass/screen.scss */
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #680020 transparent transparent transparent;
+  bottom: -1em;
+}
+
+/* line 236, ../sass/screen.scss */
+.ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+
+/* line 240, ../sass/screen.scss */
+.ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+}
+
+/* line 248, ../sass/screen.scss */
 .message-container {
   max-width: 700px;
   margin: 0 auto 1em;
@@ -279,7 +356,7 @@ section h2 span {
   clear: both;
 }
 
-/* line 197, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 .message-bubble {
   margin: 1em auto 3em;
   padding: 1em 2em;
@@ -291,7 +368,7 @@ section h2 span {
   -o-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 204, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 .message-bubble:after {
   content: "";
   display: block;
@@ -299,13 +376,13 @@ section h2 span {
   border-style: solid;
   border-width: 15px;
 }
-/* line 212, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 .message-bubble p {
   line-height: 3em;
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 218, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 .message-bubble .author {
   position: absolute;
   font-weight: 500;
@@ -313,97 +390,97 @@ section h2 span {
   height: 1em;
 }
 
-/* line 226, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 .message-user {
   float: left;
   background: #dddddd;
 }
-/* line 230, ../sass/screen.scss */
+/* line 288, ../sass/screen.scss */
 .message-user:after {
   bottom: -30px;
   left: 20px;
   border-color: #dddddd #dddddd white white;
 }
-/* line 236, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 .message-user p {
   text-align: left;
 }
-/* line 240, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 .message-user .author {
   color: #dddddd;
   left: 70px;
 }
 
-/* line 246, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 .message-obama {
   float: right;
   background: #ce0040;
   color: #fff;
 }
-/* line 251, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 .message-obama:after {
   bottom: -30px;
   right: 20px;
   border-color: #ce0040 white white #ce0040;
 }
-/* line 257, ../sass/screen.scss */
+/* line 315, ../sass/screen.scss */
 .message-obama p {
   text-align: right;
 }
-/* line 261, ../sass/screen.scss */
+/* line 319, ../sass/screen.scss */
 .message-obama .author {
   color: #ce0040;
   right: 70px;
 }
 
-/* line 270, ../sass/screen.scss */
+/* line 328, ../sass/screen.scss */
 .faq {
   max-width: 600px;
   margin: 0 auto 16px;
 }
-/* line 274, ../sass/screen.scss */
+/* line 332, ../sass/screen.scss */
 .faq h3 {
   font-weight: bold;
   margin: 16px 0 0;
 }
-/* line 278, ../sass/screen.scss */
+/* line 336, ../sass/screen.scss */
 .faq h3.is-link {
   cursor: pointer;
 }
-/* line 281, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 .faq h3.is-link:hover {
   text-decoration: underline;
 }
 
-/* line 288, ../sass/screen.scss */
+/* line 346, ../sass/screen.scss */
 .answer {
   margin: 16px 0 32px;
 }
 
-/* line 292, ../sass/screen.scss */
+/* line 350, ../sass/screen.scss */
 ul {
   list-style-type: disc;
   margin-left: 2em;
 }
 
-/* line 297, ../sass/screen.scss */
+/* line 355, ../sass/screen.scss */
 li {
   margin: 1em 0;
 }
 
-/* line 301, ../sass/screen.scss */
+/* line 359, ../sass/screen.scss */
 cite {
   display: block;
   margin-top: 16px;
   font-size: 0.8em;
   color: #aaaaaa;
 }
-/* line 307, ../sass/screen.scss */
+/* line 365, ../sass/screen.scss */
 cite a {
   color: #aaaaaa;
 }
 
-/* line 314, ../sass/screen.scss */
+/* line 372, ../sass/screen.scss */
 footer {
   text-align: center;
   padding: 32px;
