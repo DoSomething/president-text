@@ -169,6 +169,7 @@ section {
 .intro {
 	font-size: 24px;
 	line-height: 1.3em;
+	padding-top: 4px;
 
 	.ribbon {
 		font-size: 38px;
@@ -247,7 +248,8 @@ section {
 
 .message-container {
   max-width: 600px;
-  margin: 0 auto 1em;
+  margin: 0 auto;
+  padding-bottom: 0;
   overflow: hidden;
   clear: both;
 }
