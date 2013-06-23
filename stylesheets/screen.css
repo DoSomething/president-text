@@ -95,7 +95,7 @@ em {
 
 /* line 31, ../sass/screen.scss */
 a {
-  color: #ce0040;
+  color: #bc0028;
 }
 
 /* line 35, ../sass/screen.scss */
@@ -292,7 +292,7 @@ section h2 span {
 .ribbon {
   width: 40%;
   position: relative;
-  background: #ce0040;
+  background: #bc0028;
   color: #fff;
   text-align: center;
   line-height: 1.2em;
@@ -308,7 +308,7 @@ section h2 span {
   position: absolute;
   display: block;
   bottom: -1em;
-  border: 1.5em solid #9b0030;
+  border: 1.5em solid #89001d;
   z-index: -1;
 }
 
@@ -332,7 +332,7 @@ section h2 span {
   position: absolute;
   display: block;
   border-style: solid;
-  border-color: #680020 transparent transparent transparent;
+  border-color: #560012 transparent transparent transparent;
   bottom: -1em;
 }
 
@@ -414,14 +414,14 @@ section h2 span {
 /* line 304, ../sass/screen.scss */
 .message-obama {
   float: right;
-  background: #ce0040;
+  background: #bc0028;
   color: #fff;
 }
 /* line 309, ../sass/screen.scss */
 .message-obama:after {
   bottom: -30px;
   right: 20px;
-  border-color: #ce0040 white white #ce0040;
+  border-color: #bc0028 white white #bc0028;
 }
 /* line 315, ../sass/screen.scss */
 .message-obama p {
@@ -429,7 +429,7 @@ section h2 span {
 }
 /* line 319, ../sass/screen.scss */
 .message-obama .author {
-  color: #ce0040;
+  color: #bc0028;
   right: 70px;
 }
 
