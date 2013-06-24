@@ -54,10 +54,10 @@ header {
 	position: relative;
 	background: #eee url('obama-hero.jpg') no-repeat center center;
 	@include background-size(cover);
-	height: 375px;
+	height: 450px;
 
 	@include respond-to(phones) {
-		height: 275px;
+		height: 225px;
 	}
 
 	@include transition(height 0.5s)	

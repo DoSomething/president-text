@@ -151,7 +151,7 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 375px;
+  height: 450px;
   -webkit-transition: height 0.5s;
   -moz-transition: height 0.5s;
   -o-transition: height 0.5s;
@@ -160,7 +160,7 @@ header {
 @media only screen and (max-width: 600px) {
   /* line 53, ../sass/screen.scss */
   header {
-    height: 275px;
+    height: 225px;
   }
 }
 
