@@ -155,6 +155,7 @@ header {
 // SECTIONS/HEADERS
 // ----------------
 section {
+  clear: both;
 	padding: 32px;
 
 	h2 {
@@ -231,6 +232,37 @@ section {
   color: #fff;
 	padding: 32px;
 }
+
+
+
+// HOW IT WORKS
+// ----------------
+
+.column-container {
+  margin: 0 auto;
+}
+
+.col-3 {
+  width: 33.3333333%;
+  float: left;
+  padding: 6px;
+  text-align: center;
+
+  @include box-sizing(border-box);
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  @include respond-to(phones) {
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+
 
 // SMS MESSAGES
 // ----------------
