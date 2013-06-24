@@ -177,7 +177,7 @@ section {
 	position: relative;
 	z-index: 1;
 	text-align: center;
-	padding: 24px;
+	padding: 0;
 }
 
 .intro {
@@ -193,10 +193,10 @@ section {
 	}
 
 	.ribbon {
-		font-size: 38px;
+		font-size: 56px;
+    padding: 48px;
 
-		@include respond-to(tablets) { font-size: 24px; }
-		@include respond-to(phones) { font-size: 18px; }
+		@include respond-to(phones) { font-size: 36px; }
 	}
 }
 
@@ -204,10 +204,10 @@ section {
 	font-size: 18px;
 
 	.ribbon {
-		font-size: 24px;
+		font-size: 36px;
 
 		@include respond-to(phones) {
-			font-size: 18px;
+			font-size: 20px;
 		}
 	}
 }
@@ -227,49 +227,9 @@ section {
 }
 
 .ribbon {
- width: 40%;
- position: relative;
- background: $red;
- color: #fff;
- font-weight: 600;
- text-align: center;
- line-height: 1.2em;
- padding: 1em 1em; /* Adjust to suit */
- margin: 0em auto 1em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
-}
-.ribbon:before, .ribbon:after {
- content: "";
- position: absolute;
- display: block;
- bottom: -1em;
- border: 1.5em solid darken($red, 10%);
- z-index: -1;
-}
-.ribbon:before {
- left: -2em;
- border-right-width: 1.5em;
- border-left-color: transparent;
-}
-.ribbon:after {
- right: -2em;
- border-left-width: 1.5em;
- border-right-color: transparent;
-}
-.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
- content: "";
- position: absolute;
- display: block;
- border-style: solid;
- border-color: darken($red, 20%) transparent transparent transparent;
- bottom: -1em;
-}
-.ribbon .ribbon-content:before {
- left: 0;
- border-width: 1em 0 0 1em;
-}
-.ribbon .ribbon-content:after {
- right: 0;
- border-width: 1em 1em 0 0;
+	background: $red;
+  color: #fff;
+	padding: 32px;
 }
 
 // SMS MESSAGES
@@ -334,13 +294,13 @@ section {
 
 .message-obama {
   float: right;
-  background: $red;
+  background: $blue;
   color: #fff;
 
   &:after {
   	bottom: -30px;
   	right: 20px;
-  	border-color: $red $bg-light $bg-light $red;
+  	border-color: $blue $bg-light $bg-light $blue;
   }
 
   p {
@@ -348,7 +308,7 @@ section {
   }
 
   .author {
-  	color: $red;
+  	color: $blue;
   	right: 70px;
   }
 }
