@@ -52,7 +52,7 @@ a {
 // ----------------
 header {
 	position: relative;
-	background: #eee url('../images/obama-hero.jpg') no-repeat center center;
+	background: #eee url('obama-hero.jpg') no-repeat center center;
 	@include background-size(cover);
 	height: 375px;
 
@@ -124,6 +124,20 @@ header {
 		font-weight: 600;
 	}
 
+	em {
+		display: block;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1em;
+		margin-top: 12px;
+
+		@include respond-to(phones) {
+			font-size: 12px;
+			margin-top: 6px;
+		}
+	}
+
 	@include respond-to(phones) {
 		font-size: 16px;
 	}
@@ -135,7 +149,7 @@ header {
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	font-size: 18px;
-	margin: 12px;
+	margin: 32px 12px 12px;
 }
 
 // SECTIONS/HEADERS
@@ -168,7 +182,15 @@ section {
 
 .intro {
 	font-size: 24px;
+	margin: 0 auto;
 	line-height: 1.3em;
+	padding-top: 4px;
+
+	p {
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
 	.ribbon {
 		font-size: 38px;
@@ -188,6 +210,14 @@ section {
 			font-size: 18px;
 		}
 	}
+}
+
+.ctia {
+	margin-top: 1em;
+	font-size: 11px;
+	color: #ccc;
+	text-align: center;
+	line-height: 1em;
 }
 
 .messages {
@@ -247,7 +277,8 @@ section {
 
 .message-container {
   max-width: 600px;
-  margin: 0 auto 1em;
+  margin: 0 auto;
+  padding-bottom: 0;
   overflow: hidden;
   clear: both;
 }
