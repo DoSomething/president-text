@@ -403,7 +403,7 @@ section h3 {
 /* line 287, ../sass/screen.scss */
 .message-bubble {
   margin: 1em auto 3em;
-  padding: 1em 2em;
+  padding: 24px;
   position: relative;
   clear: both;
   -webkit-border-radius: 2px;
